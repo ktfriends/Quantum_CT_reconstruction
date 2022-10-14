@@ -1,8 +1,8 @@
 # Optimization algorithm for CT image reconstruction
 ```
-1. CT image of quantum superposition: undetermined CT image
-2. Calculation of a superimposed sinogram by Radon transform of the superimposed CT image
-3. Optimizing the superimposed sinogram to a sinogram obtained by an experiment (X-ray or Radon etc.)
+1. Use superposition of qubits to make an undetermined CT image.
+2. Calculate a sinogram with qubits in superposition by Radon transform from the CT image.
+3. Optimizing the sinogram with qubits and a sinogram obtained by an experiment (X-ray or Radon etc.)
 ```
 
 ## Main developer
