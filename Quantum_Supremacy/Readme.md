@@ -1,18 +1,18 @@
 # Quantum Supremacy in Tomographic Imaging: Advances in Quantum Tomography Algorithms
 ```
-This quantum algorithm simultaneously performs CT image reconstruction and CT image setgmentation.
+Preprint: Arxiv adress will be updated soon.
 ```
 
-## Quantum Superposition State of Pixels
+## Quantum Supremacy
 ```
-1. Superposition 1: I = a1*q1 + a2*q2 + --- + an*qn (I: superposed pixel, ai: X-ray mass attenuation coefficient)
-2. Superposition 2: I = a1*q1 + (a2-a1)*q2 + --- + (an-a(n-1))*qn 
+1. Resistance to ring artifacts: horizontal error in the sinogram
+2. Resistance to noisy projections: vertical error in the sinogram
+3. Reduction in Required Projection Angles: limited angle (90 degree) in the sinogram
 ```
 
 ### File Description (Shepp-Logan image sample)
 ```
-Xray_30by30_2MAC.ipynb: Sample size is 30 by 30 and has two X-ray mass attenuation coefficients.
-Xray_30by30_3MAC.ipynb:Sample size is 30 by 30 and has three X-ray mass attenuation coefficients.
-Xray_50by50_2MAC.ipynb: Sample size is 50 by 50 and has two X-ray mass attenuation coefficients.
-Xray_50by50_3MAC.ipynb:Sample size is 50 by 50 and has three X-ray mass attenuation coefficients.
+Figure 5: Quantum_supremacy(Shepp_Logan_50x50-Limited angles)
+Figure 6: quantum supremacy(Body CT image 50x50 - ring artifacts)
+Figure 8: quantum supremacy(Body CT image 50x50 - limited_angles)
 ```
