@@ -1,46 +1,18 @@
-# Preliminary Study for Quantum Optimization Algorithms
+# Quantum Supremacy in Tomographic Imaging: Advances in Quantum Tomography Algorithms
 ```
-Jennifer Kim
-Cardozo High School
-Queens, NY, USA.
-jjjenniferkim07@gmail.com
+This quantum algorithm simultaneously performs CT image reconstruction and CT image setgmentation.
 ```
 
-## Files summary
+## Quantum Superposition State of Pixels
 ```
-1. ax_b.ipynb
-Problem: Given ax = b and find x
-QUBO model: (ax-b)^2 - b^2
-Minimum energy: -b^2
+1. Superposition 1: I = a1*q1 + a2*q2 + --- + an*qn (I: superposed pixel, ai: X-ray mass attenuation coefficient)
+2. Superposition 2: I = a1*q1 + (a2-a1)*q2 + --- + (an-a(n-1))*qn 
+```
 
-Range of x            Qubit representation
-0 <= x <= 1            x = q1
-0 <= x <= 3            x = q1 + 2q2
-0 <= x <= 7            x = q1 + 2q2 + 4q3
-0 <= x <= 15           x = q1 + 2q2 + 4q3 + 8q4
+### File Description (Shepp-Logan image sample)
 ```
-```
-2. Ax_b_Translation.ipynb
-Problem: Given ax = b and find x
-QUBO model: (ax-b)^2 - b^2
-Minimum energy: -b^2
-
-Range of x            Qubit representation
-5 <= x <= 8            x = q1 + 2q2 + 5
-7 <= x <= 14           x = q1 + 2q2 + 4q3 + 7
--10 <= x <= -7         x = q1 + 2q2 - 10
-```
-```
-3. Linear_System_2by2.ipynb
-Problem: Given two line equations: a)a1*x + b1*y = c1, b)a2*x + b2*y = c2 and find the intersection point
-QUBO model: (a1*x + b1*y - c1)^2 + (a2*x + b2*y - c2)^2 - (c1^2 + c2^2)
-Minimum energy: -(c1^2 + c2^2)
-```
-```
-4. CT_2by2_01_03.ipynb
-Problem: Quantum optimization algorithm for CT image reconstruction
-Test image information: 2 by 2 image, each pixel has random integer
-1. CT image with qubit variable
-2. Calculate a sinogram by applying Radon transform to the CT image
-3. Opmization the sinogram with qubit variable to the sinogram obtained by the experiment
+Xray_30by30_2MAC.ipynb: Sample size is 30 by 30 and has two X-ray mass attenuation coefficients.
+Xray_30by30_3MAC.ipynb:Sample size is 30 by 30 and has three X-ray mass attenuation coefficients.
+Xray_50by50_2MAC.ipynb: Sample size is 50 by 50 and has two X-ray mass attenuation coefficients.
+Xray_50by50_3MAC.ipynb:Sample size is 50 by 50 and has three X-ray mass attenuation coefficients.
 ```
