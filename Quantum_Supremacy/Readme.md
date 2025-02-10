@@ -1,6 +1,6 @@
 # Quantum Supremacy in Tomographic Imaging: Advances in Quantum Tomography Algorithms
 ```
-Preprint: Arxiv adress will be updated soon.
+Paper: https://arxiv.org/abs/2502.04830
 ```
 
 ## Quantum Supremacy
