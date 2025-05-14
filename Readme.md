@@ -7,6 +7,10 @@
 
 ## Main developer
 ```
+Arim Ryou: arimryou@chungbuk.ac.kr
+Quantum Compressed Sensing Tomographic Reconsstruction
+```
+```
 Hyunju Lee: hyunjulee0824@gmail.com
 QUBO matrix implementation for binary images
 ```
