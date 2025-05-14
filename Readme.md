@@ -20,6 +20,6 @@ Development of Optimization Theory for Quantum CT Image Reconstruction
 QUBO matrix update for general images
 ```
 ```
-Jun's research team members
-Hyunju Lee, Youngpyo Ryu, Edward Kim, Diniel Kwon
+Jun and Kim's research team members
+Arim Ryou, Hyunju Lee, Youngpyo Ryu, Diniel Kwon
 ```
