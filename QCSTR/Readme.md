@@ -9,9 +9,9 @@ Quantum optimization model: Energy difference between a superimposed sinogram an
 ## File Description
 ```
 1. : 
-   SART
+   SART(Simultaneous algebraic reconstruction technique)
 2. :
-   FBP
+   FBP(Filtered back projection)
 3. :
    QTR(Quantum tomographic reconstruction)
 4. :
