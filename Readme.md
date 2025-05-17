@@ -7,15 +7,15 @@
 
 ## Main developer
 ```
-Arim Ryou: arimryou@chungbuk.ac.kr
+Arim Ryou: arimryou01@gmail.com, arimryou@chungbuk.ac.kr
 Quantum Compressed Sensing Tomographic Reconsstruction
 ```
 ```
-Hyunju Lee: hyunjulee0824@gmail.com
+Hyunju Lee: hyunjulee0824@gmail.com, hjhj2627@dongguk.edu
 QUBO matrix implementation for binary images
 ```
 ```
-Kyungtaek Jun: ktfriends@gmail.com
+Kyungtaek Jun: ktfriends@gmail.com, ktfriends@chungbuk.ac.kr
 Development of Optimization Theory for Quantum CT Image Reconstruction
 QUBO matrix update for general images
 ```
