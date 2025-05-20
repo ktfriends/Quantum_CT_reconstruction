@@ -11,7 +11,7 @@ Title: Quantum Compressed Sensing Tomographic Reconstruction Algorithm
 Paper: https://arxiv.org/abs/2505.11286
 Implementation: Arim Ryou
 Patent ownership: QTomo Inc.
-Experimentaal research: Chungbuk National University and QTomo
+Experimental research: Chungbuk National University and QTomo
 ```
 
 ### File Description
