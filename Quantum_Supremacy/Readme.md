@@ -19,7 +19,7 @@ Figure 8: quantum supremacy(Body CT image 50x50 - limited_angles)
 
 ## Reproducibility patch
 - Config: `config.yaml` (or `configs/config.yaml` if you placed it there)
-- Patch notebook: `notebooks/tools/patch_code.ipynb`
+- Patch notebook: `./patch_code.ipynb`
 - Dependency: `pyyaml` (`pip install pyyaml`)
 
 ### Purpose
