@@ -1,0 +1,86 @@
+meta:
+  python: "3.9.19"
+  packages:
+    numpy: "1.26.4"
+    matplotlib: "3.9.1"
+    scikit-image: "0.24.0"
+    pydicom: "2.4.4"
+    SimpleITK: "2.4.0"
+    PyYAML: "6.0.2"
+    dwave-system: "1.25.0"
+    dwave-neal: "0.6.0"
+
+solver:
+  backend: "leap_hybrid"   # Hybrid manages schedule/embedding/chain internally
+
+common:
+  pad: 10
+  num_qb: 3
+  max_angle_deg: 180
+  note: "ring_rows are sinogram row indices; artifact_strengths are multiplicative factors for those rows. Missing angles are column indices."
+
+cases:
+  # 50x50, ring artifact 10%
+  - name: "50x50_ra_10"
+    nx: 50
+    ring_artifact:
+      num_ra_ratio: 0.1
+      ring_rows: [14, 20, 25, 50, 60]
+      artifact_strengths: [0.97798281, 0.56781767, 0.2504525, 0.74112785, 0.99796161]
+
+  # 50x50, ring artifact 20%
+  - name: "50x50_ra_20"
+    nx: 50
+    ring_artifact:
+      num_ra_ratio: 0.2
+      ring_rows: [16, 28, 29, 39, 41, 42, 51, 53, 54, 58]
+      artifact_strengths: [0.42456072, 0.35929019, 0.95199343, 0.10696382, 0.93528507,
+                  0.06952547, 0.84482134, 0.27140397, 0.6975901, 0.29891455]
+
+  # 50x50, ring artifact 30%
+  - name: "50x50_ra_30"
+    nx: 50
+    ring_artifact:
+      num_ra_ratio: 0.3
+      ring_rows: [13, 14, 17, 20, 21, 25, 27, 33, 36, 38, 45, 49, 54, 56, 58]
+      artifact_strengths: [0.71147146, 0.18005637, 0.59269763, 0.0085536, 0.68504826,
+                  0.05362381, 0.16959109, 0.65968486, 0.85434995, 0.1207028,
+                  0.62906419, 0.19063975, 0.02658611, 0.45933479, 0.590024]
+
+  # 50x50, ring artifact 40%
+  - name: "50x50_ra_40"
+    nx: 50
+    ring_artifact:
+      num_ra_ratio: 0.4
+      ring_rows: [10, 12, 14, 17, 19, 20, 21, 27, 28, 30, 31, 41, 43, 44, 45, 46, 49, 55, 57, 58]
+      artifact_strengths: [0.28918842, 0.87776088, 0.86732711, 0.30769742, 0.71139523,
+                  0.30195725, 0.971796, 0.17715998, 0.31120086, 0.22442987,
+                  0.27011983, 0.8462939, 0.43090688, 0.67000277, 0.23803128,
+                  0.44225839, 0.31096741, 0.97039808, 0.62267155, 0.54206162]
+
+  # 50x50, ring artifact 50%
+  - name: "50x50_ra_50"
+    nx: 50
+    ring_artifact:
+      num_ra_ratio: 0.5
+      ring_rows: [10, 11, 13, 17, 19, 22, 24, 26, 28, 32, 33, 34, 39, 41, 45, 47, 49,
+                  50, 51, 53, 54, 55, 56, 58, 59]
+      artifact_strengths: [0.51807467, 1.52040848, 0.66543376, 2.02405166, 1.49333593,
+                  0.07594753, 0.27967976, 0.097484, 0.40704781, 0.93294526,
+                  1.18642771, 1.21456356, 0.17479401, 0.33568162, 0.64303645,
+                  1.35268984, 0.24897496, 0.47966952, 0.15400008, 0.89943103,
+                  0.63679199, 1.49802131, 0.68351959, 2.24090715, 0.90013785]
+
+  # 50x50, missing projection-angle columns (no strengths)
+  - name: "50x50_missing_angles_set1"
+    nx: 50
+    missing_projection_columns: [11, 26, 36, 44, 48]
+
+  - name: "50x50_missing_angles_set2"
+    nx: 50
+    missing_projection_columns: [2, 5, 13, 14, 16, 21, 25, 26, 32, 33, 35, 36, 39, 41, 44]
+
+  - name: "50x50_missing_angles_set3"
+    nx: 50
+    missing_projection_columns: [0, 1, 2, 4, 5, 13, 14, 15, 18, 19, 21, 22, 23, 24,
+                                 30, 31, 32, 33, 37, 38, 39, 40, 43, 44, 49]
